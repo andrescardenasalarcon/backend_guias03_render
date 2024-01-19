@@ -14,6 +14,7 @@ const dbConfig = {
     database: process.env.database,
     password: process.env.password,
     port: Number(process.env.port),
+    ssl: true
 };
 const pool = pgp(dbConfig);
 pool.connect()
