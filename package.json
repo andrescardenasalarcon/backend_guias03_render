@@ -20,7 +20,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "node index.js"
+      "tsc": "tsc",
+      "build": "npm install; tsc",
+      "start": "node build/index.js"
   },
   "engines": {
     "node":"18.x"
